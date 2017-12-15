@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SABC Website</title>
+  <!-- link to icon for title -->
+    <link rel="icon" type="image/PNG" href="homepage images/download.png">
+  <!-- reference to my internal stylesheet -->
+    <style media="screen">
+        /*General stylesheet*/
+
+        /*inserting box border*/
+        * {
+          box-sizing: border-box;
+        }
+
+        /*styling body min width,max width,font-family,font,letter-spacing,line-height,word-spacing*/
+        body{
+              min-width: 90%;
+              max-width: 100%;
+              font-family: sans-serif;
+              font:Arial;
+              letter-spacing: 2px;
+              line-height: 1.5;
+              word-spacing: 4px;
+              /*margin & background colour*/
+              margin: 0;
+              background: white;
+
+        }
+
+        /*inserting linear-gradient top image background size,blend,repeat border width and height*/
+        header{
+              background-image: linear-gradient(to bottom, white 0%,blue 100%),
+              url(https://i.pinimg.com/236x/06/0c/e2/060ce2b677df091c1ab50715b6ce1d8e--texture.jpg);
+              width: 70%;
+              height: 100px;
+              margin-left: 200px;
+              background-size: 100%;
+              background-repeat: no-repeat;
+              background-blend-mode: hard-light;
+              border-top: 1mm solid black;
+        }
+
+        /*styling h1 , position,background size,width,height,margin-left,box-shadow*/
+        h1 {
+              position: absolute;
+              background-size: 400px 75px;
+              width: 400px;
+              height:75px;
+              background-image: url(http://www.ericadesigns.co.za/wordpress/wp-content/uploads/2011/07/logo8.jpg);
+              /*filter: drop-shadow(8px 8px 10px green);*/
+              box-shadow: 6px 6px 6px darkblue;
+              margin-left: 2mm;
+        }
+
+        /*styling for navigation bar height & width*/
+        nav {
+            height: 120px;
+            width: 70%;
+            margin-left: 200px;
+        }
+
+        /*styling nav unordered list: list-style,background-colour,text-align,padding,margin*/
+        nav ul {
+                list-style: none;
+                background-color: gray;
+                text-align: center;
+                padding: 0;
+                margin: 0;
+        }
+
+        /*styling nav list line-height,height,border-bottom,list-style-type,display*/
+        nav li {
+                line-height: 40px;
+                height: 40px;
+                border-bottom: 1px solid #888;
+                list-style-type: none;
+                display: inline;
+        }
+
+        /*styling nav anchor text-decoration,color,display,font-size*/
+        nav a {
+                text-decoration: none;
+                color: white;
+                display: block;
+                font-size: 16px;
+        }
+
+        /*styling nav hover background-colour*/
+        nav a:hover {
+                    background-color: #005f5f;
+        }
+
+        /*styling nav active background-colour,colour,cursor*/
+        nav a.active {
+                      background-color: #fff;
+                      color: #444;
+                      cursor: default;
+        }
+
+        /*styling nav list width,border-bottom,height,line-height*/
+        nav li {
+                width: 120px;
+                border-bottom: none;
+                height: 50px;
+                line-height: 50px;
+          }
+
+        /*styling nav list display,margin-right*/
+        nav li {
+                display: inline-block;
+                margin-right: 4px;
+          }
+        /*container width,height,and padding-left*/
+        #container{
+                  width: 70%;
+                  height: auto;
+                  margin-left: 200px;
+        }
+        /*contact icon for image margin-right*/
+        #contactIcons img{
+                        border: 1px solid black;
+                        margin-right: 30px;
+        }
+
+        /*styling form width,float*/
+        form{
+            width: 65%;
+            height: auto;
+            padding-left: 20px;
+            float: left;
+        }
+
+        input[type]{
+                  width: 100%;
+        }
+        /*styling aside float,width,padding-top*/
+        aside{
+              float: right;
+              width: 5%;
+              height: auto;
+              margin-right: 250px;
+        }
+
+
+        /*styling footer background-image,url,width,height,background size,background-repeat,background-blend-mode,border-top,clear*/
+        footer{
+              background-image: linear-gradient(to bottom, white 0%,blue 100%),
+              url(https://i.pinimg.com/236x/06/0c/e2/060ce2b677df091c1ab50715b6ce1d8e--texture.jpg);
+              width: 70%;
+              height: 140px;
+              margin-left: 200px;
+              background-size: 100%;
+              background-repeat: no-repeat;
+              background-blend-mode: hard-light;
+              border-top: 1mm solid black;
+              clear: both;
+        }
+
+        /*styling footer div IM float,margin-left*/
+        footer div a.im{
+                    float: left;
+                    margin-top: 10mm;
+                    padding: 0px 4px;
+        }
+
+        /*styling footer div Small float,padding-right,padding-left,padding-top*/
+        footer div a.small{
+                        float: left;
+                        padding: 0px 2px;
+                        margin-top: 16mm;
+        }
+
+        /*styling footer div Links list-style,float,color,padding-right,padding-left*/
+        footer div sub.links a{
+                            float: left;
+                            margin-top: 40px;
+                            padding: 0px 40px;
+                            color: white;
+        }
+
+        /*styling footer div iabsa float,padding-right*/
+        footer div a.iabsa{
+                        float: right;
+        }
+    </style>
+  </head>
+
+  <body>
+ <!-- header for h1 tag for sabc logo -->
+    <header>
+      <h1></h1>
+    </header>
+<!-- Inserting navigation bar -->
+      <nav>
+        <ul>
+<!-- developing live links to navigate accross website -->
+              <li><a href="Homepage.html">Home</a></li>
+              <li><a href="About us.html">About us</a></li>
+              <li><a href="News.html">News</a></li>
+              <li><a href="Contact us.html">Contact us</a></li>
+
+        </ul>
+      </nav>
+<!-- section for container form,table,and aside -->
+      <section id="container">
+        <!-- form for table container and contact form -->
+        <form style="border:1px solid black;">
+          <table id="contactIcons">
+            <tr>
+              <td><img src="homepage images/emailus.png" alt="Email us" width="120" height="95"></td>
+              <td><img src="homepage images/physical.png" alt="Physical address" width="120" height="95"></td>
+              <td><img src="homepage images/postal.png" alt="Postal Details" width="120" height="95"></td>
+              <td><img src="homepage images/contact.png" alt="Contact Details" width="120" height="95"></td>
+            </tr>
+            <tr>
+              <td><button type="Email us"  value="Email us">Email us</button></td>
+              <td><button type="Physical address"  value="Physical address">Physical address</button></td>
+              <td><button type="Postal Details"  value="Postal Details">Postal Details</button></td>
+              <td><button type="Contac Details"  value="Contac Details">Contact Details</button></td>
+            </tr>
+          </table>
+
+          <h2>Email us</h2>
+
+              <p>Fill out the form to send your comments, queries and feedback to the SABC</p>
+
+              <p>Please select a category for your request.<select>
+
+                                                              <option>Select a category</option>
+                                                              <option>TV Licence Enquires</option>
+                                                              <option>Visit the SABC</option>
+                                                              <option>Generic Enquiries</option>
+                                                              <option>Programme Enquires</option>
+                                                              <option>Programme Proposals</option>
+                                                              <option>Programme Purchase</option>
+                                                              <option>TV & Radio signal reception  problems</option>
+                                                              <option>SABC 1 queries</option>
+                                                              <option>SABC 2 queries</option>
+                                                              <option>SABC 3 queries</option>
+                                                              <option>Advertising on SABC platforms</option>
+                                                              <option>Complaints about SABC services</option>
+                                                              <option>SABC internships</option>
+                                                              <option>CSI proposal</option>
+                                                              <option>SABC Encore enquiries</option>
+
+                                                        </select></p>
+  						<table>
+  						  <tr>
+  						    <td><label>Name:</label><input type="text" name="name"placeholder="Enter Here"></td>
+  						  </tr>
+                <tr>
+  						    <td><label>Email address:</label><input type="text" name="Email"placeholder="Enter Here"></td>
+  						  </tr>
+                <tr>
+  						    <td>
+                    <label>Subject:</label><input type="text" name="Subject" placeholder="Enter Here"></td>
+                </tr>
+                <tr>
+                  <td>
+                      <label>Message:</label>
+                      <p><textarea name="Feedback" rows="8" cols="80" placeholder="Comment Here..."></textarea></p>
+                  </td>
+  						  </tr>
+                <tr>
+  						    <td>
+                    <button type="submit"  value="Submit">Submit</button>
+                    <button type="reset"  value="Refresh">Refresh</button>
+                  </td>
+  						  </tr>
+  						</table>
+        </form>
+        <!-- aside for sidebar -->
+        <aside>
+          <img src="homepage images/Edu.jpg" alt="EduTech" width="300px" height="200px">
+
+          <img src="homepage images/sideimage.PNG" alt="Sidebar" width="300px" height="350px">
+
+          <iframe width="300" height="258" src="https://www.youtube.com/embed/FrcFtIRRfuU?list=PL09A9482D217EEDBD" frameborder="0" allowfullscreen></iframe>
+        </aside>
+      </section>
+  <!--footer for logo,extra info,social media,iabsa links -->
+      <footer>
+
+        <div class="im">
+
+          <a href="#" class="im"><img src="homepage images/footer.PNG" alt="footer" width="100" height="80"></a>
+
+          <a href="#" class="small"><img src="homepage images/twitter.PNG" alt="twitter" width="30" height="40"></a>
+
+          <a href="#" class="small"><img src="homepage images/facebook.PNG"alt="facebook" width="30" height="40"></a>
+
+          <a href="#" class="small"><img src="homepage images/youtube.PNG" alt="youtube" width="30" height="40"></a>
+
+          <sub class="links">
+
+                <a href="#" target="_blank">About the SABC</a>
+                <a href="#" target="_blank">Contact Us</a>
+                <a href="#" target="_blank">Tenders</a>
+                <a href="#" target="_blank">Jobs</a>
+                <a href="#" target="_blank">Advertise</a>
+                <a href="#" target="_blank">Disclaimer</a>
+                <a href="#" target="_blank">Press Releases</a>
+                <a href="#" target="_blank">Site Map</a>
+
+          </sub>
+          <a href="#" class="iabsa"><img src="homepage images/iab.png" alt="iabsa" width="60px"></a>
+        </div>
+      </footer>
+  </body>
+</html>

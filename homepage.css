@@ -1,0 +1,171 @@
+/*This is my stylesheet */
+
+/*inserting box border*/
+* {
+  box-sizing: border-box;
+}
+
+/*basic styling for body;min-width,max-width,font-family,letter-spacing,line-height,word-spacing,margin,background-color*/
+#containerMain{
+              min-width: 1000px;
+              max-width: 1400px;
+              font-family: sans-serif;
+              letter-spacing: 2px;
+              line-height: 1.5;
+              word-spacing: 4px;
+              margin: 0;
+              background-color: white;
+}
+
+/*inserting linear-gradient top image background size,blend,repeat border width and height*/
+header{
+      background-image: linear-gradient(to bottom, white 0%,blue 100%),
+      url(https://i.pinimg.com/236x/06/0c/e2/060ce2b677df091c1ab50715b6ce1d8e--texture.jpg);
+      width: 70%;
+      height: 100px;
+      margin-left: 200px;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-blend-mode: hard-light;
+      border-top: 1mm solid black;
+}
+/*container width,height,and margin-left*/
+#container{
+          width: 70%;
+          height: auto;
+          margin-left: 200px;
+}
+
+/*styling section width & float*/
+section{
+        width: 60%;
+        float: left;
+}
+
+/*styling for h1 , position,background size,height,box-shadow,margin-left,width,background-image*/
+h1 {
+      position: absolute;
+      background-size: 400px 75px;
+      width: 400px;
+      height:75px;
+      background-image: url(http://www.ericadesigns.co.za/wordpress/wp-content/uploads/2011/07/logo8.jpg);
+      /*filter: drop-shadow(8px 8px 10px green);*/
+      box-shadow: 6px 6px 6px darkblue;
+      margin-left: 2mm;
+}
+
+/*styling for navigation bar height & width*/
+nav {
+    height: 120px;
+    width: 70%;
+    margin-left: 200px;
+}
+
+/*styling nav list-style,background-color,text-align,padding,margin*/
+nav ul {
+        list-style: none;
+        background-color: gray;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+}
+
+/*styling nav line-height,height,border-bottom,list-style-type,display*/
+nav li {
+        line-height: 40px;
+        height: 40px;
+        border-bottom: 1px solid #888;
+        list-style-type: none;
+        display: inline;
+        width: 120px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+    	  display: inline-block;
+        margin-right: -4px;
+}
+
+/*styling nav text-decoration,color,display,font-size*/
+nav a {
+      text-decoration: none;
+      color: white;
+      display: block;
+      font-size: 16px;
+}
+
+/*stylig nav hover background-color*/
+nav a:hover {
+            background-color: #005f5f;
+}
+
+/*styling nav active background-color color,cursor*/
+nav a.active {
+              background-color: #fff;
+              color: #444;
+              cursor: default;
+}
+
+/*styling nav width,border-bottom,height,line-height display,margin-right*/
+nav li {
+
+  }
+
+/*styling table border colour and style*/
+table{
+      border-top: 6px solid #d9c6ff;
+      width: 100%;
+}
+
+/*styling table class p1*/
+table p.p1{
+            color: gray;
+}
+
+/*styling aside border,width,float*/
+aside{
+      width: 30%;
+
+      background-color: blue;
+      float: right;
+}
+
+/*styling footer background-image,url,width,height,background size,background-repeat,background-blend-mode,border-top,clear*/
+footer{
+      background-image: linear-gradient(to bottom, white 0%,blue 100%),
+      url(https://i.pinimg.com/236x/06/0c/e2/060ce2b677df091c1ab50715b6ce1d8e--texture.jpg);
+      width: 70%;
+      height: 140px;
+      margin-left: 200px;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-blend-mode: hard-light;
+      border-top: 1mm solid black;
+      clear: both;
+}
+
+/*styling footer div IM float,margin-left*/
+footer div a.im{
+            float: left;
+            margin-top: 10mm;
+            padding: 0px 4px;
+}
+
+/*styling footer div Small float,padding-right,padding-left,padding-top*/
+footer div a.small{
+                float: left;
+                padding: 0px 2px;
+                margin-top: 16mm;
+}
+
+/*styling footer div Links list-style,float,color,padding-right,padding-left*/
+footer div sub.links a{
+                    float: left;
+                    margin-top: 40px;
+                    padding: 0px 40px;
+                    color: white;
+}
+
+/*styling footer div iabsa float,padding-right*/
+footer div a.iabsa{
+                float: right;
+}

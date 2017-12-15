@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SABC Website</title>
+<!-- link to icon for title -->
+    <link rel="icon" type="image/PNG" href="homepage images/download.png">
+<!-- The following styles are my internal styling -->
+    <style>
+    /*inserting box border*/
+        * {
+          box-sizing: border-box;
+        }
+		 /*styling min-width,max-width,font-family,letter-spacing,line-height,word-spacing,margin,background colour,border-style*/
+        body{
+              min-width: 1000px;
+              max-width: 1400px;
+              font-family: sans-serif;
+              letter-spacing: 2px;
+              line-height: 1.5;
+              word-spacing: 4px;
+              margin: 0;
+              background-color: white;
+              border-style: solid 3px blue;
+        }
+        /*inserting linear-gradient top image background size,blend,repeat border width and height*/
+        header{
+              background-image: linear-gradient(to bottom, white 0%,blue 100%),
+              url(https://i.pinimg.com/236x/06/0c/e2/060ce2b677df091c1ab50715b6ce1d8e--texture.jpg);
+              width: 70%;
+              height: 100px;
+              margin-left: 200px;
+              background-size: 100%;
+              background-repeat: no-repeat;
+              background-blend-mode: hard-light;
+              border-top: 1mm solid black;
+        }
+      /*styling section width*/
+        section{
+                width: 50%;
+        }
+        /*styling for h1 , position,background size,height,box-shadow,margin-left,width,background-image*/
+        h1 {
+              position: absolute;
+              background-size: 400px 75px;
+              width: 400px;
+              height:75px;
+              background-image: url(http://www.ericadesigns.co.za/wordpress/wp-content/uploads/2011/07/logo8.jpg);
+              /*filter: drop-shadow(8px 8px 10px green);*/
+              box-shadow: 6px 6px 6px darkblue;
+              margin-left: 2mm;
+        }
+    /*styling for navigation bar height & width*/
+        nav {
+            height: 120px;
+            width: 70%;
+            margin-left: 200px;
+        }
+		/*styling nav list-style,background-color,text-align,padding,margin*/
+        nav ul {
+                list-style: none;
+                background-color: gray;
+                text-align: center;
+                padding: 0;
+                margin: 0;
+        }
+		/*styling nav line-height,height,border-bottom,list-style-type,display*/
+        nav li {
+                line-height: 40px;
+                height: 40px;
+                border-bottom: 1px solid #888;
+                list-style-type: none;
+                display: inline;
+                width: 120px;
+                border-bottom: none;
+                height: 50px;
+                line-height: 50px;
+    			      display: inline-block;
+                margin-right: 4px;
+        }
+		/*styling nav text-decoration,color,display,font-size*/
+        nav a {
+              text-decoration: none;
+              color: white;
+              display: block;
+              font-size: 16px;
+        }
+		/*stylig nav hover background-color*/
+        nav a:hover {
+                    background-color: #005f5f;
+        }
+		/*styling nav active background-color color,cursor*/
+        nav a.active {
+                      background-color: #fff;
+                      color: #444;
+                      cursor: default;
+        }
+    /*styling container for width,height,and margin-left*/
+        #container{
+                  width: 70%;
+                  height: auto;
+                  margin-left: 200px;
+        }
+    /*styling section float,width,(border-style,width,colour)*/
+        #main_content{
+                      float: left;
+                      width: 80%;
+                      height: auto;
+                      padding: 0px 12px;
+                      border-style: solid;
+                      box-sizing: border-box;
+                      border-width: thick;
+                      border-color: green;
+            }
+		/*styling background colour,repeat,size*/
+        h2{
+          background-color: lightgreen;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+
+		/*styling aside border,width,float,(background-color,repeat)*/
+        #sidebar{
+                border: 4px solid green;
+                width: 20%;
+                height: auto;
+                float: right;
+                background-repeat: no-repeat;
+        }
+
+        /*styling footer background-image,url,width,height,background size,background-repeat,background-blend-mode,border-top,clear*/
+        footer{
+                background-image: linear-gradient(to bottom, white 0%,blue 100%),
+                url(https://i.pinimg.com/236x/06/0c/e2/060ce2b677df091c1ab50715b6ce1d8e--texture.jpg);
+                width: 70%;
+                height: 140px;
+                margin-left: 200px;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-blend-mode: hard-light;
+                border-top: 1mm solid black;
+                clear: both;
+        }
+
+        /*styling footer div IM float,margin-left*/
+        footer div a.im{
+                      float: left;
+                      margin-top: 10mm;
+                      padding: 0px 4px;
+        }
+
+        /*styling footer div Small float,padding-right,padding-left,padding-top*/
+        footer div a.small{
+                          float: left;
+                          padding: 0px 2px;
+                          margin-top: 16mm;
+        }
+
+        /*styling footer div Links list-style,float,color,padding-right,padding-left*/
+        footer div sub.links a{
+                              float: left;
+                              margin-top: 40px;
+                              padding: 0px 40px;
+                              color: white;
+        }
+
+        /*styling footer div iabsa float,padding-right*/
+        footer div a.iabsa{
+                          float: right;
+        }
+    </style>
+  </head>
+  <body>
+  <!-- header for h1 -->
+    <header>
+    <!-- h1 heading for SABC logo -->
+      <h1></h1>
+    </header>
+
+    <!-- Inserting navigation bar -->
+    <nav>
+      <ul>
+        <!-- developing live links to navigate accross website -->
+        <li><a href="Homepage.html">Home</a></li>
+        <li><a href="About us.html">About us</a></li>
+        <li><a href="News.html">News</a></li>
+        <li><a href="Contact us.hml">Contact us</a></li>
+
+      </ul>
+    </nav>
+    <!-- section to contain main section and sidebar -->
+    <section id="container">
+      <!--Section for content-->
+        <section id="main_content">
+          <!-- h2 tag and bold tag for about heading -->
+            <h2><b>About us:</b></h2>
+          <!-- h3 heading for who are we -->
+            <h3>WHO ARE WE?</h3>
+              <!-- paragraph tag for info -->
+                <p>SABC Group Sales and Marketing falls under the Commercial Enterprise Division of the South African Broadcasting Corporation (SABC). SABC Group Sales and Marketing is the premier powerhouse of commercial media sales and airtime sponsorships, spanning a vast and diverse brand offering across television, radio, digital and mobile platforms.</p>
+
+                <p>Through the SABC’s four enticing television channels and its dynamic 18 radio stations, SABC GSM provides an easily accessible, high quality driven and client value based media solutions platform for our current and prospective clients.</p>
+            <!-- h3 tag and underline tag for the services we offer -->
+            <h3><u>The services we offer include:</u></h3>
+            <!-- unordered list for services offered -->
+            <ul>
+
+                <li>Generic and customised media sales opportunities</li>
+                <li>On-Air Sponsorship solutions</li>
+                <li>Stations events sponsorship opportunities</li>
+                <li>Specialised media strategy solutions</li>
+                <li>Consumer, audience and environmental analysis</li>
+                <li>Radio advertising production facilities</li>
+
+            </ul>
+            <!-- p tag for additional text -->
+            <p>For more information on who to contact go to our contact us page</p>
+        </section>
+
+    	<!--Aside for sidebar-->
+        <aside id="sidebar">
+          <!-- center tag for advertisemnt -->
+            <center>
+                <!-- h3 tag and bold tag for advertisement heading  -->
+                  <h4><b>ADVERTISEMENT</b></h4>
+            </center>
+            <!-- image of advertisement -->
+            <img src="https://tpc.googlesyndication.com/simgad/12227694194524210163" alt="ADVERTISEMENT" width="180px" height="235px">
+        </aside>
+    </section>
+<!--footer for logo,extra info,social media,iabsa links -->
+    <footer>
+
+      <div class="im">
+
+        <a href="#" class="im"><img src="homepage images/footer.PNG" alt="footer" width="100px" height="80px"></a>
+
+        <a href="#" class="small"><img src="homepage images/twitter.PNG" alt="twitter" width="30px" height="40px"></a>
+
+        <a href="#" class="small"><img src="homepage images/facebook.PNG"alt="facebook" width="30px" height="40px"></a>
+
+        <a href="#" class="small"><img src="homepage images/youtube.PNG" alt="youtube" width="30px" height="40px"></a>
+
+        <sub class="links">
+
+              <a href="#" target="_blank">About the SABC</a>
+              <a href="#" target="_blank">Contact Us</a>
+              <a href="#" target="_blank">Tenders</a>
+              <a href="#" target="_blank">Jobs</a>
+              <a href="#" target="_blank">Advertise</a>
+              <a href="#" target="_blank">Disclaimer</a>
+              <a href="#" target="_blank">Press Releases</a>
+              <a href="#" target="_blank">Site Map</a>
+
+        </sub>
+
+        <a href="#" class="iabsa"><img src="homepage images/iab.png" alt="iabsa" width="60px" height="40px"></a>
+
+      </div>
+    </footer>
+  </body>
+</html>
